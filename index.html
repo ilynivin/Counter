@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="box">
+            <h1 id="counter">0</h1>
+        </div>
+        <div class="buttons">
+            <button class="Plus" onclick="plus()">Plus</button>
+            <button class="Minus" onclick="minus()">Minus</button>
+        </div>
+    </div>
+    <script type="text/JavaScript">
+        let count = 0 ;
+        let counter = document.getElementById('counter');
+        function minus(){
+
+    if (count == 0){
+        count = 0
+    } else{
+        count = count -1;
+    }
+    counter.innerHTML = count;
+    }
+    function plus(){
+    count = count +1;
+    counter.innerHTML = count;
+    }   
+</script>
+</body>
+</html>
